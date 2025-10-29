@@ -10,6 +10,7 @@ spec:
     targetRevision: HEAD
     path: charts/webapp
     helm:
+      releaseName: webapp-prod
       valueFiles:
         - values-prod.yaml
   destination:
@@ -19,3 +20,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
+
